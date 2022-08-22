@@ -1,7 +1,7 @@
 #!/bin/bash -e
 #!/bin/bash -e
 #define variables to store info
-version=5.3
+version=5.4.3
 scriptname="LoadTest_Jmeter_Jenkins_Integration"
 # override the HEAP settings and run the jmeter script.
 JVM_ARGS="-Xms512m -Xmx2048m" jmeter -n -t /opt/apache-jmeter-${version}/bin/examples/${scriptname}.jmx -l /jmeter.jtl 2>&1
